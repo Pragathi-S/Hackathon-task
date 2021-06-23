@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New tickets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav id="topNav">
+        <img class="companylogo" src="brandlogo.jpg">
+    </nav>
+        <nav id="sideNav">
+            <ul>
+                <li><a href="index.html"><span><i class="fa fa-tachometer" aria-hidden="true"></i></span>&nbsp;&nbsp;&nbsp;Dashboard</a></li>
+                <li><a href="tickets.html"> <span><i class="fa fa-ticket" aria-hidden="true"></i></span>&nbsp;&nbsp;&nbsp;Tickets</a></li>
+                <li><a href="contacts.html"><span><i class="fa fa-user" aria-hidden="true"></i></span>&nbsp;&nbsp;&nbsp;Contacts</a></li>
+            </ul>
+        </nav>
+        <h1>Tickets</h1>
+        <div class="fill">
+            <form id="fill" method="GET">
+            <label>Enter the subject</label>
+            <br>
+            <input type="text" id="subject" name="subject"  class="add-ticket-subject" required/>
+            <br><br>
+            <label>Enter cc emails</label>
+            <br>
+            <input type="text" id="email" name="email" class="add-ticket-cc_emails" required/>
+            <br><br>
+          <label>Select ticket status</label>
+            <br>
+          <select id="status" name="status" class="add-ticket-status" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5r">5</option>
+            <!-- <option value="6">6</option> -->
+          </select>
+            <br><br>
+          <label>Select ticket priority</label>
+            <br>
+          <select id="priority" name="priority" class="add-ticket-priority" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+            <br><br>
+            <button id="entry" class="add-ticket" type="button" onclick="addTicket()"> Add Ticket </button>
+          </form>
+          </div>
+          <div class="tickets">
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
